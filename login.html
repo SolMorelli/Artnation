@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artnation | Registrarse</title>
+    <!-- LIBRERIAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed2aaa730f.js" crossorigin="anonymous"></script>
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="brand" href="index.html">Artnation</a>
+            <div class="links">
+                <a href="catalog.html">Catálogo</a>
+                <a href="forum.html">Foro</a>
+                <a href="login.html">Mi cuenta</a>
+                <a href="contact.html">Contacto</a>
+            </div>
+        </nav>
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Buscar...">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <a href=""><i class="fas fa-shopping-cart"></i></a>
+    </header>
+    <main>
+        <h1>Le damos la bienvenida a nuestra comunidad</h1>
+        <form action="show_data.html">
+            <fieldset>
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Apellido:</label>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required><br>
+                <label for="city">Ciudad:</label>
+                <input type="text" id="city" name="city" required><br>
+                <label for="postalCode">Código postal:</label>
+                <input type="text" id="postalCode" name="postalCode" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            </fieldset>
+            <fieldset>
+                <label for="birthday">Fecha de nacimiento:</label>
+                <input type="date" id="birthday" name="birthday"
+                min="1920-01-01" max="2002-12-31" required><br>
+                <input type="radio" id="hobby" name="artStatus" value="hobby" required>
+                <label for="hobby">Hobby</label>
+                <input type="radio" id="proffession" name="artStatus" value="proffession" required>
+                <label for="proffession">Profesión</label><br>
+                <input type="checkbox" id="promotions" name="promotions" value="promotions">
+                <label for="promotions">Comunicarme sobre nuevas promociones</label><br>
+            </fieldset>
+            
+            <input id="send" type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <div class="light">
+            <div class="nav">
+                <div class="links catalog-links">
+                    <h4><a href="#">Catálogo</a></h4>
+                    <ul>
+                        <li><a href="">Color</a></li>
+                        <li><a href="">Superficie</a></li>
+                        <li><a href="">Pinceles</a></li>
+                        <li><a href="">Estudio</a></li>
+                        <li><a href="">Marcas</a></li>
+                    </ul>
+                </div>
+                <div class="links account-links">
+                    <h4><a href="#">Mi cuenta</a></h4>
+                    <ul>
+                        <li><a href="">Ajustes</a></li>
+                        <li><a href="">Iniciar sesión</a></li>
+                        <li><a href="">Registrarse</a></li>
+                        <li><a href="">Artnative</a></li>
+                    </ul>
+                </div>
+                <div class="links forum-links">
+                    <h4><a href="#">Foro</a></h4>
+                    <ul>
+                        <li><a href="">Discusión</a></li>
+                        <li><a href="">Tutoriales</a></li>
+                        <li><a href="">Inspiración</a></li>
+                        <li><a href="">Galería</a></li>
+                    </ul>
+                </div>
+                <div class="links artnation-links">
+                    <h4><a href="#">Artnation</a></h4>
+                    <ul>
+                        <li><a href="">Sobre nosotros</a></li>
+                        <li><a href="">Preguntas frecuentes</a></li>
+                        <li><a href="">Política de privacidad</a></li>
+                        <li><a href="">Sedes</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h4>¡Suscríbase a nuestro boletín de noticias para recibir ofertas, ideas y recursos todas las semanas!</h4>
+                <form action="#">
+                    <div class="top">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="email@ejemplo.com"><br>
+                    </div>
+                    <div class="bottom">
+                        <input type="submit" id="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div class="branches">
+                <h4>Sucursales</h4>
+                <div class="branch-group">
+                    <p>Av. Tada Inven 1234<br>
+                    Gral San Martín<br>
+                    Buenos Aires</p>
+                <p>Inés Istente 5678<br>
+                    Gral San Martín<br>
+                    Buenos Aires</p>
+                </div>
+            </div>
+        </div>
+        <div class="dark">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-deviantart"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+            <div class="copyright">
+                Página creada por<a href="#">Sol Morelli</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
