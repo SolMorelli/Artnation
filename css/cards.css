@@ -1,0 +1,76 @@
+main .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+main .row .card {
+    width: 90vw;
+    height: 90vw;
+    background-color: blue;
+    margin: 10vw;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .row .card span {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #7d73e6;
+}
+
+@media only screen and (min-width: 426px) {
+    main .row .card {
+        width: 30vw;
+        height: 30vw;
+        margin: 5vw;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    main .row .card {
+        width: 18vw;
+        height: 18vw;
+        margin: 2.5vw;
+    }
+    main .row .card span {
+        font-size: 1rem;
+    }
+}
+
+
+/* --- --- BACKGROUNDS --- --- */
+
+#colors {
+    background-image: url(../images/cards/guilherme-bellotti-colors.jpg);
+}
+#surfaces {
+    background-image: url(../images/cards/justyn-warner-surfaces.jpg);
+}
+#accesories {
+    background-image: url(../images/cards/vitor-santos-accesories.jpg);
+}
+#school {
+    background-image: url(../images/cards/mel-poole-school.jpg);
+}
+#office {
+    background-image: url(../images/cards/jo-szczepanska-office.jpg);
+}
+#gifts {
+    background-image: url(../images/cards/kasturi-roy-gifts.jpg);
+}
+#tutorials {
+    background-image: url(../images/cards/kasturi-roy-tutorials.jpg);
+}
+#on-sale {
+    background-image: url(../images/cards/peter-feghali-sale.jpg);
+}

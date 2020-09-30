@@ -1,0 +1,89 @@
+#catalog {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 0 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#catalog .left {
+    height: 60%;
+    position: relative;
+    display: flex;
+}
+#catalog .left .text {
+    margin-left: 10vw;
+    height: 70%;
+    position: relative;
+}
+#catalog .left .text p {
+    background-color: rgba(255, 255, 255, .85);
+    width: 80%;
+    padding: 1rem 0;
+    margin: 0;
+}
+#catalog .left .text .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#catalog .art {
+    height: 60vh;
+    width: 50vw;
+    background-image: url(../images/debby-hudson-unsplash.png);
+    background-size: cover;
+    background-position: center;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    z-index: -1;
+}
+#catalog p:before {
+    content: "02";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    color: #292f36;
+    font-weight: 600;
+}
+
+/*-----MEDIA QUERIES-----*/
+
+@media only screen and (min-width: 426px) {
+    #catalog .art {
+        width: 40vw;
+        height: 70vh;
+        bottom: 0;
+        right: 0;
+    }
+    #catalog .left .text {
+        width: 40%;
+        height: 50%;
+        margin-left: 5vw;
+        align-self: center;
+        justify-self: flex-end;
+    }
+    #catalog .left .text p {
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 769px) {
+    #catalog .art {
+        width: 30vw;
+        height: 90vh;
+        bottom: -4rem;
+    }
+    #catalog .left .text {
+        width: 30%;
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width: 2210px) {
+    /* NOT NECESSARY for now */
+}

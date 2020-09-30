@@ -1,0 +1,125 @@
+/*-----MAIN-----*/
+
+#login {
+    height: 90vh;
+    box-sizing: border-box;
+    margin: 0 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/*---LEFT / UP---*/
+#login .left {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #login .left .art {
+        align-self: flex-end;
+        width: 100%;
+    }
+        h1 {
+            font-weight: 900;
+            line-height: .85;
+            color: #7c73e6;
+            font-size: 20vw;
+            margin: 0;
+        }
+            #login .art .arte {
+                padding-left: 30vw;
+            }
+
+/*---RIGHT / DOWN---*/
+#login .right {
+    height: 40%;
+    width: 100%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+    #login .right .text {
+        margin: 0 auto;
+        height: 70%;
+        width: 80%;
+        position: relative;
+    }
+        #login .right .text p {
+            position: relative;
+            margin: 0;
+        }
+
+/*---BUTTON POSITIONING---*/
+#login #btn-absolute {
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+}
+
+/*---NUMBER---*/
+
+#login p:before {
+    content: "01";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    color: #292f36;
+    font-weight: 600;
+
+}
+
+@media only screen and (min-width: 426px) {
+
+    #login .left {
+        height: 50%;
+    }
+    #login .left .art {
+        width: 80%;
+    }
+    #login .right {
+        height: 30%;
+    }
+    #login .right .text {
+        width: 50%;
+        height: 90%;
+    }
+    h1 {
+        font-size: 15vw;
+    }
+    
+}
+
+@media only screen and (min-width: 769px) {
+    #login .left {
+        width: 60%;
+        height: 100%;
+    }
+    #login .left .art {
+        align-self: center;
+    }
+    h1 {
+        font-size: 12vw;
+    }
+    #login .art .arte {
+        padding-left: 20vw;
+    }
+    #login .right {
+        width: 40%;
+        height: 100%;
+        align-items: center;
+    }
+    #login .right .text {
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width: 2210px) {
+    #login .right .text {
+        width: 30%;
+        height: 30%;
+    }
+}

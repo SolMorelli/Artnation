@@ -1,0 +1,69 @@
+body {
+    background-color: #fff;
+    color: #292f36;
+    font-family: Barlow, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.button {
+    outline: none;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: 'Barlow Condensed', Helvetica, sans-serif;
+}
+p {
+    font-weight: inherit;
+}
+
+
+/*---BUTTON ANIMATION---*/
+.btn-blue {
+    border: 3px solid #292f36;
+    box-sizing: border-box;
+    padding: .75rem 2rem;
+    font-family: Barlow, Helvetica, sans-serif;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+.btn-blue:before {
+    content: "";
+    display: block;
+    background-color: #7c73e6;
+    position: absolute;
+    top: -4px;
+    left: -3px;
+    right: -4px;
+    bottom: -4px;
+    z-index: -4;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease-out;
+}
+.btn-blue:hover:before {
+    transform: scaleX(1);
+}
+.btn-blue:hover {
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 769px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 2210px) {
+    html {
+        font-size: 24px;
+    }
+}

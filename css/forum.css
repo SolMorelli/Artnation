@@ -1,0 +1,61 @@
+#forum {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 2rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(../images/joanna-kosinska-unsplash.png);
+    background-position: top left;
+    background-size: cover;
+}
+#forum .text {
+    height: 50%;
+    width: 80%;
+    position: relative;
+}
+#forum .text p {
+    background-color: rgba(255, 255, 255, .85);
+    padding: 1rem;
+    margin: 0;
+}
+#forum .text .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#forum p:before {
+    content: "03";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    color: #292f36;
+    font-weight: 600;
+}
+
+/*-----MEDIA QUERIES-----*/
+
+@media only screen and (min-width: 426px) {
+    #forum .text {
+        width: 50%;
+        height: 40%;
+    }
+    
+}
+
+@media only screen and (min-width: 769px) {
+    #forum {
+        justify-content: center;
+    }
+    #forum .text {
+        width: 30%;
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width: 2210px) {
+    #forum .text {
+        height: 30%;
+    }
+}

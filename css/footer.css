@@ -1,0 +1,196 @@
+footer {
+    height: 60vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Barlow Condensed', Helvetica, sans-serif;
+    letter-spacing: .5px;
+    font-weight: 300;
+}
+footer .light {
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: #292f36;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .light .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+footer .nav .links {
+    width: 50%;
+    line-height: 1.5;
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+
+footer .newsletter {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2rem 0;
+}
+footer .newsletter form .top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    flex-grow: 1;
+}
+footer .newsletter form #email {
+    flex-grow: 1;
+    height: 1.5rem;
+}
+footer .newsletter form label {
+    margin-right: 2rem;
+}
+footer .newsletter form #submit {
+    outline: none;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: 'Barlow Condensed', Helvetica, sans-serif;
+    border: 3px solid #fff;
+    color: white;
+    padding: .25rem 2rem;
+
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+    background-position: 0 100%;
+    transition: background-size 300ms ease-out;
+}
+footer .newsletter #submit:hover {
+    background-size: 100% 100%;
+    color: #292f36;
+}
+
+
+h4 {
+    margin: 0;
+    font-weight: 500;
+    font-family: 'Barlow Condensed', Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+footer .branches {
+    width: 100%;
+}
+footer .branches .branch-group {
+    display: flex;
+    justify-content: space-between;
+}
+h3 {
+    margin: 0;
+}
+
+
+footer .dark {
+    background-color: #1e2124;
+    height: 20vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .dark .social-media {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .dark .copyright a {
+    text-decoration: underline;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 426px) {
+    footer .newsletter form {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .newsletter form .bottom {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+    }
+    footer .light .nav .links {
+        width: 25%;
+    }
+    footer .newsletter {
+        display: inline-block;
+        width: 50%;
+    }
+    footer .branches {
+        display: inline-block;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+    }
+    footer .dark .social-media {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    footer .light .nav {
+        width: 50%;
+        justify-content: space-around;
+    }
+    footer .light .nav .links {
+        width: fit-content;
+    }
+    footer .newsletter {
+        width: 30%;
+        margin: 0;
+    }
+    footer .branches {
+        width: 10%;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+    footer .branches .branch-group {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .light {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .dark .social-media {
+        width: 25%;
+    }
+    footer .dark .copyright {
+        width: 25%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    footer .dark {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .dark .copyright p {
+        text-align: right;
+        width: fit-content;
+    }
+    footer .dark .copyright a {
+        margin-left: .25rem;
+    }
+}
+
+@media only screen and (min-width: 2210px) {
+    /* NOT NECESSARY for now */
+}

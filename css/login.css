@@ -1,0 +1,39 @@
+main h1 {
+    font-size: 2rem;
+}
+main {
+    box-sizing: border-box;
+    padding: 0 2rem;
+}
+form label {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+form input {
+    border: 2px solid #292f36;
+    border-radius: 5px;
+    padding: .1rem;
+    margin: .5rem 0;
+    color: #292f36;
+}
+fieldset {
+    border: none;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+main form {
+    margin: 2rem 0;
+}
+main form #send {
+    color: white;
+    background-color: #292f36;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', Helvetica, sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: background-color 300ms ease-in-out;
+}
+main form #send:hover {
+    background-color: #7c73e6;
+}
